@@ -1,1 +1,86 @@
+//Write a program to check given number is Prime or Not ?
+
+//Code
+
+// Using For loop
+#include <stdio.h>
+int main()
+{
+int i,n,prime=1;
+    printf("enter a num : ");
+    scanf("%d",&n);
+    for (i = 2;i<n; i++)
+     {
+        //for check given number n is divisible by i or not 
+        //if number n is divisible by any number i ,It's not a prime number
+        if(n%i==0) 
+        {
+            prime=0;
+        }    
+     }
+    if(prime)
+        {
+            printf("%d is prime number!\n",n);
+        }
+        else
+        {
+            printf("%d is not a prime number!\n",n);
+        }
+       return 0;
+}
+
+
+// Using while loop
+#include <stdio.h>
+int main()
+{
+int i=2,n,prime=1;
+    printf("enter a num : ");
+    scanf("%d",&n);
+    while(i<n)
+     {
+         if(n%i==0)
+         {
+             prime=0;
+         }
+         ++i;
+     }
+     
+         
+          if(prime)
+     {
+         printf("%d is a prime num\n",n);
+     }
+     else
+     {
+         printf("%d is not a prime num\n",n);
+     }
+       return 0;
+}
+
+// Using do While loop
+#include <stdio.h>
+int main()
+{
+int i=2,n,prime=1;
+    printf("enter a num : ");
+    scanf("%d",&n);
+    do
+    {
+        if(n%i==0)
+        {
+            prime=0;
+        }
+        ++i;
+    }while(i<n);
+    if(prime)
+    {
+        printf("%d is a prime number!\n",n);
+    }
+    else
+    {
+        printf("%d is not a prime number!\n",n);
+    }
+       return 0;
+}
 
