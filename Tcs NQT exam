@@ -21,10 +21,8 @@ int main()
             }
         }
         rem=float(p/D)*100.0;
-        cout<<rem<<endl;
         if(rem>per){
             count++;
-            cout<<count<<endl;
         }
     }
     cout<<count;
