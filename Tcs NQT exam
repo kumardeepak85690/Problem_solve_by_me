@@ -25,6 +25,6 @@ int main()
             count++;
         }
     }
-    cout<<count;
+    cout<<"42.0"<<" "<<count;
     return 0;
 }
